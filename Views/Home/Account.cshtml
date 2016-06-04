@@ -1,0 +1,63 @@
+﻿@{
+    ViewBag.Title = "Account";
+}
+
+@{
+    
+    if (IsPost)
+    {
+       
+       Response.Redirect("~/Home/login");
+        
+   }
+
+
+}
+
+<!---->
+<div class="container">
+    <h6 class="dress"><a href="../../Home/Index">Home</a> <i> </i> Account </h6>
+</div>
+<div class="back">
+    <h2>ACCOUNT</h2>
+</div>
+<!---->
+<div class="container">
+    <div class="account_grid">
+        <div class=" login-right">
+            <h3> Admin</h3>
+            
+            <form action="/Home/Login" method="POST">
+
+                <strong>Name</strong><br>
+                <input type="Text" id="uname" name="uname" class="form-control" placeholder="Enter your name" required />
+                <span id="name1"></span><br>
+
+                <strong>Password</strong><br>
+                <input type="Password" id="password" name="password" class="form-control" placeholder="Enter your Password" value="" required />
+                <span id="password1"></span><br>
+
+
+
+                <button type="submit" class="btn btn-primary btn-block" value="submit" onclick="validate()"> LogIn </button> <br />
+            </form>
+
+          
+        </div>
+        
+
+    </div>
+
+</div>
+<!---->
+<div class="bottom-grid1">
+
+    <div class="fit1">
+        <h3>HAPPY SHOPPING</h3>
+        <p>
+            Enjoy Shopping and visit us when ever you want.We are always able to serve you.
+            Thank You!!!!!!!
+        </p>
+    </div>
+</div>
+<!---->

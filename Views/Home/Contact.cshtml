@@ -1,0 +1,88 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+
+@{
+    if (IsPost)
+    {
+       
+        var con_name = Request["con_name"];
+        var email = Request["email"];
+        var subject = Request["subject"];
+        var message = Request["message"];
+      
+        <p> @con_name " " @email " " + " " @subject " " + @message  </p>
+     
+            Response.Redirect("~/Home/SaveContacter");
+        
+    }
+
+
+}
+
+
+
+<!---->
+<div class="container">
+    <h6 class="dress"><a href="../../Home/Index">Home</a> <i> </i> FeedBack </h6>
+</div>
+<div class="back">
+    <h2>FeedBack</h2>
+</div>
+<!---->
+<div class="container">
+    <div class="contact">
+
+        <div class=" contact-top-in">
+            <h3>Info</h3>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37494223.23909492!2d103!3d55!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x453c569a896724fb%3A0x1409fdf86611f613!2sRussia!5e0!3m2!1sen!2sin!4v1415776049771"></iframe>
+            </div>
+
+            <p>
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas.
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas.At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas.
+            </p>
+
+        </div>
+        <div class=" contact-top">
+            <h3>Feeback</h3>
+
+            <form action="/Home/SaveContacter" method="POST">
+
+                <strong>Name</strong><br>
+                <input type="Text" id="name" name="con_name" class="form-control" placeholder="Enter your name" required />
+                <span id="name1"></span><br>
+
+
+                <strong>Email</strong><br>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Enter your Email" required />
+                <span id="email1"></span><br>
+
+                <strong>Subject</strong><br>
+                <input type="Text" id="subject" name="subject" class="form-control" placeholder="Enter your Subject" required />
+                <span id="name1"></span><br>
+
+                <strong>Message</strong><br>
+                <textarea name="message" cols="15" rows="5" class="form-control" placeholder="Message" required> </textarea>
+
+                <br><br><br><br><br>
+
+                <button type="submit" class="btn btn-primary btn-block" value="submit" onclick="validate()"> Send </button> <br />
+            </form>
+            
+
+    </div>
+</div>
+<div class="bottom-grid1">
+
+    <div class="fit1">
+        <h3>HAPPY SHOPPING</h3>
+        <p>
+            Enjoy Shopping and visit us when ever you want.We are always able to serve you.
+            Thank You!!!!!!!
+        </p>
+    </div>
+</div>
+<!---->
+</div>

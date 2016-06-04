@@ -1,0 +1,71 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Vieworder</title>
+    @Html.Partial("PartialPage")
+    @Html.Partial("AdminPartialHeader")
+
+</head>
+<body style="font-family:Verdana ;color:white;overflow-x:hidden ;background-image:url('/Content/images/nbg16.jpg');background-repeat:no-repeat;background-size:cover;">
+    <div class="container-fluid">
+
+        
+        <h1> <b> <i> List of Orders </i></b></h1>  <br /> <br /> 
+       
+        <div class="table-responsive">
+            <table class="table" style="background:#ad5719;padding:10px;width:95%;border-radius:10px;margin-left:30px">
+
+                <tr>
+                    <td style="padding-left:10px"><br />&nbsp; ID <br /><br /></td>
+                    <td><br />&nbsp; order_Id <br /><br /></td>
+                    <td><br />&nbsp; Item Number <br /><br /></td>
+                    <td><br />&nbsp; Quantity_Packs <br /><br /></td>
+                    <td><br /> &nbsp; Price <br /><br /> </td>
+                    <td><br /> &nbsp; Size <br /><br /> </td>
+                    <td><br /> &nbsp; Color<br /><br /> </td>
+                   
+                </tr>
+
+                <tbody>
+
+                    @foreach (var s in Model)
+                    {
+                        <tr style="border:1px solid black">
+
+                            <td style="padding:10px;padding-left:10px"> @s.sr_no</td>
+                            <td style="padding:10px"> @s.o_Id</td>
+                            <td style="padding:10px"> @s.item</td>
+                            <td style="padding:10px"> @s.quantity_packs</td>
+                            <td style="padding:10px"> @s.price</td>
+                            <td style="padding:10px"> @s.size</td>
+                            <td style="padding:10px"> @s.color</td>
+                            
+                            <td>
+                                &nbsp; &nbsp; &nbsp; <button> <a href="/Admin/admindelorder/@s.sr_no" style="color:black"> Delete </a> </button>
+                                &nbsp; &nbsp; &nbsp;
+                            </td>
+                        </tr>
+                    }
+                    
+
+                </tbody>
+            </table>
+        </div>
+        <!---->
+        <br /><br />
+    </div>
+
+
+
+
+
+    <script src="~/js/bootstrap.js" type="text/javascript"></script>
+
+</body>
+</html>

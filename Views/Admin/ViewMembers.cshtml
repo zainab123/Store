@@ -1,0 +1,73 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ViewMembers</title>
+   @Html.Partial("PartialPage")
+   @Html.Partial("AdminPartialHeader")
+</head>
+
+<body style="font-family:Verdana ;color:white;overflow-x:hidden ;background-image:url('/Content/images/nbg16.jpg');background-repeat:no-repeat;background-size:cover;">
+    <div class="container-fluid">
+
+        <h1> <b> <i> List of all Members </i></b></h1>  <br /> <br /> 
+        
+        <div class="table-responsive">
+            <table class="table" style="background:#ad5719; padding: 10px; width: 95%; border-radius: 10px; margin-left: 30px">
+
+                <tr>
+                    <td style="padding-left:10px"><br />&nbsp; ID <br /><br /></td>
+                    <td><br />&nbsp; Name <br /><br /></td>
+                    <td><br />&nbsp; E_mail <br /><br /></td>
+                    <td><br />&nbsp; Password <br /><br /></td>
+                    <td><br /> &nbsp; Address <br /><br /> </td>
+                    <td><br /> &nbsp; Cnic <br /><br /> </td>
+                    <td><br /> &nbsp; Phone_no<br /><br /> </td>
+                    <td><br /> &nbsp; Role <br /><br /> </td>
+
+                </tr>
+
+                <tbody>
+
+                    @foreach (var s in Model)
+                    {
+                        <tr style="border:1px solid black">
+
+                            <td style="padding:10px;padding-left:10px"> @s.user_Id</td>
+                            <td style="padding:10px"> @s.uname</td>
+                            <td style="padding:10px"> @s.email</td>
+                            <td style="padding:10px"> @s.password</td>
+                            <td style="padding:10px"> @s.address</td>
+                            <td style="padding:10px"> @s.cnic</td>
+                            <td style="padding:10px"> @s.phone_no</td>
+                            <td style="padding:10px"> @s.type</td>
+
+                            <td>
+                                &nbsp; &nbsp; &nbsp; <button> <a href="/Admin/Delete1/@s.user_Id" style="color:black"> Delete </a> </button>
+                                &nbsp; &nbsp; &nbsp;
+                            </td>
+                        </tr>
+                    }
+
+                    
+                </tbody>
+            </table>
+        </div>
+        <!---->
+        <br /><br />
+    </div>
+
+
+
+
+
+    <script src="~/js/bootstrap.js" type="text/javascript"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,426 @@
+﻿
+@{
+    ViewBag.Title = "Productm1";
+}
+
+<!---->
+<div class="container">
+
+    <h6 class="dress">
+        <a href="../../Home/index">Home</a> <i> </i> Shoes
+    </h6>
+</div>
+<div class="back">
+    <h2>PRODUCTS</h2>
+</div>
+<!---->
+<div class="product">
+    <div class="container">
+        <div class="col-md-3 product-price">
+            <div class="price-grid">
+                
+                <div class="clearfix"> </div>
+                <!---->
+                <script type="text/javascript" src="../../Content/js/jquery-ui.min.js"></script>
+
+                <link rel="stylesheet" type="text/css" href="../../Content/css/jquery-ui.css">
+
+                <script type='text/javascript'>
+                    //<![CDATA[
+                    $(window).load(function () {
+                        $("#slider-range").slider({
+                            range: true,
+                            min: 0,
+                            max: 500,
+                            values: [100, 400],
+                            slide: function (event, ui) {
+                                $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+                            }
+                        });
+                        $("#amount").val("$" + $("#slider-range").slider("values", 0) + " - $" + $("#slider-range").slider("values", 1));
+
+                    });//]]>
+
+                </script>
+
+
+                <!---->
+            </div>
+
+
+            <div class=" rsidebar span_1_of_left">
+                <div class="of-left">
+                    <h3 class="cate">CATEGORIES</h3>
+                </div>
+                <ul class="menu">
+                    <li class="item1">
+                        <a href="#">Men </a>
+                        <ul class="cute">
+                            <li class="subitem1"><a href="../../Product/Index">Sneakers </a></li>
+                            <li class="subitem2"><a href="../../Product/Productm1">Casual Shoes </a></li>
+                            <li class="subitem3"><a href="../../Product/Productm2">Dress shoes </a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!--initiate accordion-->
+            <script type="text/javascript">
+                $(function () {
+                    var menu_ul = $('.menu > li > ul'),
+                           menu_a = $('.menu > li > a');
+                    menu_ul.hide();
+                    menu_a.click(function (e) {
+                        e.preventDefault();
+                        if (!$(this).hasClass('active')) {
+                            menu_a.removeClass('active');
+                            menu_ul.filter(':visible').slideUp('normal');
+                            $(this).addClass('active').next().stop(true, true).slideDown('normal');
+                        } else {
+                            $(this).removeClass('active');
+                            $(this).next().stop(true, true).slideUp('normal');
+                        }
+                    });
+
+                });
+            </script>
+            <!---->
+            <div class="product-middle">
+
+                <div class="fit-top">
+                    <h6 class="shop-top">Shoe Store</h6>
+                  
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+            <br />
+            <!---->
+            <div class="product-bottom">
+                <div class="of-left-in">
+                    <h3 class="best">BEST SELLERS</h3>
+                </div>
+                <div class="product-go">
+                    <div class=" fashion-grid">
+                        <a href="../../Home/Contact"><img class="img-responsive " src="../../Content/images/be.jpg" alt=""></a>
+
+                    </div>
+                    <div class=" fashion-grid1">
+                        <h6 class="best2">
+                            <a href="../../Home/Contact">
+                                Lorem ipsum dolor sit
+                                amet consectetuer
+                            </a>
+                        </h6>
+
+                        
+                    </div>
+
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="product-go">
+                    <div class=" fashion-grid">
+                        <a href="../../Home/Contact"><img class="img-responsive " src="../../Content/images/be1.jpg" alt=""></a>
+
+                    </div>
+                    <div class="fashion-grid1">
+                        <h6 class="best2">
+                            <a href="../../Home/Contact">
+                                Lorem ipsum dolor sit
+                                amet consectetuer
+                            </a>
+                        </h6>
+
+                       
+                    </div>
+
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="product-go">
+                    <div class=" fashion-grid">
+                        <a><img class="img-responsive " src="../../Content/images/be2.jpg" alt=""></a>
+
+                    </div>
+                    <div class=" fashion-grid1">
+                        <h6 class="best2">
+                            <a href="../../Home/Contact">
+                                Lorem ipsum dolor sit
+                                amet consectetuer
+                            </a>
+                        </h6>
+                        
+                    </div>
+
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+            <div class=" per1">
+                <img class="img-responsive" src="../../Content/images/pro.jpg" alt="">
+                <div class="six1">
+                    <h4>DISCOUNT</h4>
+                    <p>Up to</p>
+                    <span>60%</span>
+                </div>
+            </div>
+        </div>
+
+
+        <!---->
+        <!---->
+        <div class="col-md-9 product-price1">
+            <div class="mens-toolbar">
+                
+                <div class="clearfix"></div>
+            </div>
+            <div class="product-right-top">
+                <div class="top-product">
+                    <div class="col-md-4 chain-grid  simpleCart_shelfItem">
+                        <div class="grid-span-1">
+                            <a href="../../Singles/Singlem6">
+                                <img class="img-responsive " src="../../Content/images/a4_1.jpg" alt=" ">
+                                <div class="link">
+                                    <ul>
+                                        <li><i> </i></li>
+                                        <li><i class="white1"> </i></li>
+
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-chain-bottom ">
+                            <h3><a>CM_101</a></h3>
+                            <div class="star-price">
+                                <div class="price-at">
+                                    <ul class="star-footer">
+                                        <li><a ><i> </i></a></li>
+                                        <li><a><i> </i></a></li>
+                                        <li><a ><i> </i></a></li>
+                                        <li><a><i> </i></a></li>
+                                        <li><a ><i> </i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="price-at-bottom ">
+                                    <span class="item_price"> <b> Rs. 2000 </b></span>
+                                </div>
+                                <div class="clearfix"> </div>
+                            </div>
+                           
+                        </div>
+
+                    </div>
+                    <div class="col-md-4 chain-grid simpleCart_shelfItem">
+                        <div class="grid-span-1">
+                            <a href="../../Singles/Singlem7">
+                                <img class="img-responsive " src="../../Content/images/a4_2.jpg" alt=" ">
+                                <div class="link">
+                                    <ul>
+                                        <li><i> </i></li>
+                                        <li><i class="white1"> </i></li>
+
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-chain-bottom ">
+                            <h3><a> CM_102</a></h3>
+                            <div class="star-price">
+                                <div class="price-at">
+                                    <ul class="star-footer">
+                                        <li><a><i> </i></a></li>
+                                        <li><a><i> </i></a></li>
+                                        <li><a><i> </i></a></li>
+                                        <li><a><i> </i></a></li>
+                                        <li><a><i> </i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="price-at-bottom ">
+                                    <span class="item_price"><b> Rs 2000  </b> </span>
+                                </div>
+                                <div class="clearfix"> </div>
+                            </div>
+                            <div class="cart-add">
+                               
+                          
+                                <div class="clearfix"> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 chain-grid simpleCart_shelfItem">
+                        <div class="grid-span-1">
+                            <a href="../../Singles/Singlem8">
+                                <img class="img-responsive " src="../../Content/images/a4_3.jpg" alt=" ">
+                                <div class="link">
+                                    <ul>
+                                        <li><i> </i></li>
+                                        <li><i class="white1"> </i></li>
+
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-chain-bottom ">
+                            <h3> CM_103</h3>
+                            <div class="star-price">
+                                <div class="price-at">
+                                    <ul class="star-footer">
+                                        <li><a><i> </i></a></li>
+                                        <li><a><i> </i></a></li>
+                                        <li><a><i> </i></a></li>
+                                        <li><a><i> </i></a></li>
+                                        <li><a><i> </i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="price-at-bottom ">
+                                    <span class="item_price"> <b> Rs. 3000  </b></span>
+                                </div>
+                                <div class="clearfix"> </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="top-product">
+
+                    <div class="col-md-4 chain-grid simpleCart_shelfItem">
+                        <div class="grid-span-1">
+                            <a href="../../Singles/Singlem9">
+                                <img class="img-responsive " src="../../Content/images/pr4.jpg" alt=" ">
+                                <div class="link">
+                                    <ul>
+                                        <li><i> </i></li>
+                                        <li><i class="white1"> </i></li>
+
+                                    </ul>
+                                </div><span>NEW</span>
+                            </a>
+                        </div>
+                        <div class="grid-chain-bottom ">
+                            <h3>CM_104</h3>
+                            <div class="star-price">
+                                <div class="price-at">
+                                    <ul class="star-footer">
+                                        <li><a href="#"><i> </i></a></li>
+                                        <li><a href="#"><i> </i></a></li>
+                                        <li><a href="#"><i> </i></a></li>
+                                        <li><a href="#"><i> </i></a></li>
+                                        <li><a href="#"><i> </i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="price-at-bottom ">
+                                    <span class="item_price"> <b> RS 750  </b></span>
+                                </div>
+                                <div class="clearfix"> </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-4 chain-grid simpleCart_shelfItem">
+
+                        <div class="grid-span-1">
+                            <a href="../../Singles/Singlem10">
+                                <img class="img-responsive " src="../../Content/images/a6.png" alt=" ">
+                                <div class="link">
+                                    <ul>
+                                        <li><i> </i></li>
+                                        <li><i class="white1"> </i></li>
+
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-chain-bottom ">
+                            <h3>CM_105</h3>
+                            <div class="star-price">
+                                <div class="price-at">
+                                    <ul class="star-footer">
+                                        <li><a><i> </i></a></li>
+                                        <li><a ><i> </i></a></li>
+                                        <li><a><i> </i></a></li>
+                                        <li><a ><i> </i></a></li>
+                                        <li><a ><i> </i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="price-at-bottom ">
+                                    <span class="item_price"> <b> Rs. 2300  </b></span>
+                                </div>
+                                <div class="clearfix"> </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4 chain-grid simpleCart_shelfItem">
+                        <div class="grid-span-1">
+                            <a href="../../Singles/Singlem11">
+                                <img class="img-responsive " src="../../Content/images/a4_5.jpg" alt=" ">
+                                <div class="link">
+                                    <ul>
+                                        <li><i> </i></li>
+                                        <li><i class="white1"> </i></li>
+
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-chain-bottom ">
+                          <h3> CM_106</h3>
+                            <div class="star-price">
+                                <div class="price-at">
+                                    <ul class="star-footer">
+                                        <li><a ><i> </i></a></li>
+                                        <li><a><i> </i></a></li>
+                                        <li><a ><i> </i></a></li>
+                                        <li><a ><i> </i></a></li>
+                                        <li><a ><i> </i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="price-at-bottom ">
+                                    <span class="item_price"><b> Rs 2000 </b> </span>
+                                </div>
+                                <div class="clearfix"> </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+
+            <ul class="start">
+                <li class="arrow"><a href="../../Product/Product">1</a></li>
+                <li><a href="../../Product/Productm1"></a></li>
+                <li><span>2</span></li>
+                <li class="arrow"><a href="../../Product/Productm2">3</a></li>
+
+
+                <li><a href="#"><i class="next"> </i></a></li>
+            </ul>
+            <div class="clearfix"> </div>
+        </div>
+
+        <div class="clearfix"> </div>
+
+        
+           
+
+    </div>
+
+    <!---->
+
+</div>
+<div class="bottom-grid1">
+
+    <div class="fit1">
+        <h3>HAPPY SHOPPING</h3>
+        <p>
+            Enjoy Shopping and visit us when ever you want.We are always able to serve you.
+            Thank You!!!!!!!
+        </p>
+    </div>
+</div>
+
+<!---->
+
+<script src="../../Content/js/simpleCart.min.js"> </script>
+<!---->

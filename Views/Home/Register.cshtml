@@ -1,0 +1,94 @@
+﻿@{
+    ViewBag.Title = "Register";
+}
+
+
+@{
+    var error = "";
+    if (IsPost)
+    {
+        var pass1 = Request["password"];
+        var pass2 = Request["password1"];
+        var uname = Request["uname"];
+        var email = Request["email"];
+        var password = Request["password"];
+        var address = Request["adDress"];
+        var cnic = Request["cnic"];
+        var phone_no = Request["phone_no"];
+        var type = "customer";
+        <p> @password " " @uname " " + " " @cnic " " + @email + " " +  @address + " " @phone_no + " " + @type </p>
+        if (pass1 != pass2)
+        {
+            error = "Passwords donot Match ! ";
+        }
+
+        else
+        {
+            Response.Redirect("~/Home/SaveData");
+        }
+    }
+
+
+}
+
+
+<!---->
+<div class="container">
+    <h6 class="dress"><a href="../../Home/Index">Home</a> <i> </i> Register </h6>
+</div>
+<div class="back">
+    <h2>REGISTER</h2>
+</div>
+<!---->
+<div class="container">
+    <div class="register">
+        <h3>PERSONAL INFORMATION</h3>
+        <form action="/Home/SaveData" method="POST">
+
+            <strong>Name</strong><br>
+            <input type="Text" id="uname" name="uname" class="form-control" placeholder="Enter your name" required />
+            <span id="name1"></span><br>
+
+
+            <strong>Email</strong><br>
+            <input type="email" id="email" name="email" class="form-control" placeholder="Enter your Email" required />
+            <span id="email1"></span><br>
+
+            <strong>Password</strong><br>
+            <input type="Password" id="password" name="password" class="form-control" placeholder="Enter your Password" value="" required />
+            <span id="password1"></span><br>
+
+            <strong>Retype Password</strong><br>
+            <input type="Password" id="re_password" name="password1" class="form-control" placeholder="ReEnter your Password" value="" required />
+            <span id="password2" style="color:red"> @error </span><br>
+
+
+            <strong>Address</strong><br>
+            <input type="text" id="address" name="address" class="form-control" placeholder="Address"  required /><br>
+
+            <strong>CNIC</strong><br>
+            <input type="text" id="cnic" name="cnic" class="form-control" placeholder="CNIC" required /><br>
+
+
+            <strong>Cell number</strong><br>
+            <input type="text" id="cell_no" name="cellNo" class="form-control" placeholder="Enter your Cell number">
+            <span id="Cell_number"></span><br>
+
+
+
+            <button type="submit" class="btn btn-primary btn-block" value="submit" onclick="validate()"> Done </button> <br />
+        </form>
+    </div>
+</div>
+<!---->
+<div class="bottom-grid1">
+
+    <div class="fit1">
+        <h3>HAPPY SHOPPING</h3>
+        <p>
+            Enjoy Shopping and visit us when ever you want.We are always able to serve you.
+            Thank You!!!!!!!
+        </p>
+    </div>
+</div>
+<!---->

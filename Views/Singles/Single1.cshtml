@@ -1,0 +1,345 @@
+﻿@{
+    ViewBag.Title = "Single1";
+}
+
+
+<!---->
+<div class="container">
+    <h6 class="dress"><a href="../../Home/Index">Home</a> <i> </i> Description </h6>
+</div>
+<div class="back">
+    <h2>Shoes Detail</h2>
+</div>
+<!---->
+<div class="product">
+    <div class="container">
+        <div class="col-md-3 product-price">
+
+            <div class=" rsidebar span_1_of_left">
+                <div class="of-left">
+                    <h3 class="cate">CATEGORIES</h3>
+                </div>
+                <ul class="menu">
+                    <li class="item1">
+                        <a href="#">Men </a>
+                        <ul class="cute">
+                            <li class="subitem1"><a href="../../Product/Index">Sneakers </a></li>
+                            <li class="subitem2"><a href="../../Product/Productm1">Casual Shoes </a></li>
+                            <li class="subitem3"><a href="../../Product/Productm2">Dress shoes </a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!--initiate accordion-->
+            <script type="text/javascript">
+                $(function () {
+                    var menu_ul = $('.menu > li > ul'),
+                           menu_a = $('.menu > li > a');
+                    menu_ul.hide();
+                    menu_a.click(function (e) {
+                        e.preventDefault();
+                        if (!$(this).hasClass('active')) {
+                            menu_a.removeClass('active');
+                            menu_ul.filter(':visible').slideUp('normal');
+                            $(this).addClass('active').next().stop(true, true).slideDown('normal');
+                        } else {
+                            $(this).removeClass('active');
+                            $(this).next().stop(true, true).slideUp('normal');
+                        }
+                    });
+
+                });
+            </script>
+            <!---->
+            <div class="product-middle">
+
+                <div class="fit-top">
+                    <h6 class="shop-top">SHOP NOW</h6>
+                    
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+            <div class="sellers">
+                <div class="of-left-in">
+                    
+                </div>
+                <div class="tags">
+                    
+
+                </div>
+
+            </div>
+            <!---->
+            <div class="product-bottom">
+                <div class="of-left-in">
+                    <h3 class="best">BEST SELLERS</h3>
+                </div>
+                <div class="product-go">
+                    <div class=" fashion-grid">
+                        <a href="#"><img class="img-responsive " src="../../Content/images/be.jpg" alt=""></a>
+
+                    </div>
+                    <div class=" fashion-grid1">
+                        <h6 class="best2">
+                            <a href="#">
+                                Lorem ipsum dolor sit
+                                amet consectetuer
+                            </a>
+                        </h6>
+
+                        
+                    </div>
+
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="product-go">
+                    <div class=" fashion-grid">
+                        <a href="#"><img class="img-responsive " src="../../Content/images/be1.jpg" alt=""></a>
+
+                    </div>
+                    <div class="fashion-grid1">
+                        <h6 class="best2">
+                            <a>
+                                Lorem ipsum dolor sit
+                                amet consectetuer
+                            </a>
+                        </h6>
+
+                       
+                    </div>
+
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="product-go">
+                    <div class=" fashion-grid">
+                        <a href="#"><img class="img-responsive " src="../../Content/images/be2.jpg" alt=""></a>
+
+                    </div>
+                    <div class=" fashion-grid1">
+                        <h6 class="best2">
+                            <a>
+                                Lorem ipsum dolor sit
+                                amet consectetuer
+                            </a>
+                        </h6>
+                        <ul class="star-footer">
+                            <li><a href="#"><i> </i></a></li>
+                            <li><a href="#"><i> </i></a></li>
+                            <li><a href="#"><i> </i></a></li>
+                            <li><a href="#"><i> </i></a></li>
+                            <li><a href="#"><i> </i></a></li>
+                        </ul>
+                       
+                    </div>
+
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+            <div class=" per1">
+                <img class="img-responsive" src="../../Content/images/pro.jpg" alt="">
+                <div class="six1">
+                    <h4>DISCOUNT</h4>
+                    <p>Up to</p>
+                    <span>60%</span>
+                </div>
+            </div>
+        </div>
+        <!---->
+        <div class="col-md-9 product-price1">
+            <div class="col-md-5 single-top">
+                <ul id="etalage">
+
+                    <li>
+                        <img class="etalage_thumb_image img-responsive" src="../../Content/images/a2.jpg" alt="">
+                    </li>
+
+                </ul>
+
+            </div>
+            <div class="col-md-7 single-top-in simpleCart_shelfItem">
+                <div class="single-para ">
+                    <h4>Code Num:   SM_102</h4>
+                    <div class="star-on">
+                        <ul class="star-footer">
+                            <li><a href="#"><i> </i></a></li>
+                            <li><a href="#"><i> </i></a></li>
+                            <li><a href="#"><i> </i></a></li>
+                            <li><a href="#"><i> </i></a></li>
+                            <li><a href="#"><i> </i></a></li>
+                        </ul>
+                        <div class="review">
+                          
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+
+                    <h5 class="item_price">Rs. 2500</h5>
+                    <p>
+                        Sneakers in different colours.
+
+                    </p>
+                    <div class="available">
+                        <ul>
+                            <li>
+                                Color
+                                <select>
+                                    <option>Brown</option>
+                                    <option>Black</option>
+                                    <option>White</option>
+                                    <option>Red</option>
+                                </select>
+                            </li>
+                            <li class="size-in">
+                                Size<select>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+
+                                </select>
+                            </li>
+                            <div class="clearfix"> </div>
+                        </ul>
+                    </div>
+                    <ul class="tag-men">
+                        <li>
+                            <span>TAG</span>
+                            <span class="women1">:Men</span>
+                        </li>
+
+                      
+                    </ul>
+
+                  
+                </div>
+            </div>
+            <div class="clearfix"> </div>
+            <h2></h2>
+            <h2></h2>
+            <h2></h2>
+            <!---->
+            <!---->
+
+            <div class="top-product">
+                <h3 class="real">RELETED PRODUCTS</h3>
+
+                <div class="col-md-4 chain-grid  simpleCart_shelfItem">
+                    <div class="grid-span-1">
+                        <a>
+                            <img class="img-responsive " src="../../Content/images/pr.jpg" alt=" ">
+                            <div class="link">
+                                <ul>
+                                    <li><i> </i></li>
+                                    <li><i class="white1"> </i></li>
+
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid-chain-bottom ">
+                        <h6><a>WOO JACKET #1</a></h6>
+                        <div class="star-price">
+                            <div class="price-at">
+                                <ul class="star-footer">
+                                    <li><a href="#"><i> </i></a></li>
+                                    <li><a href="#"><i> </i></a></li>
+                                    <li><a href="#"><i> </i></a></li>
+                                    <li><a href="#"><i> </i></a></li>
+                                    <li><a href="#"><i> </i></a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="clearfix"> </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+                <div class="col-md-4 chain-grid simpleCart_shelfItem">
+                    <div class="grid-span-1">
+                        <a>
+                            <img class="img-responsive " src="../../Content/images/pr1.jpg" alt=" ">
+                            <div class="link">
+                                <ul>
+                                    <li><i> </i></li>
+                                    <li><i class="white1"> </i></li>
+
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid-chain-bottom ">
+                        <h6><a>WOO JACKET #2</a></h6>
+                        <div class="star-price">
+                            <div class="price-at">
+                                <ul class="star-footer">
+                                    <li><a href="#"><i> </i></a></li>
+                                    <li><a href="#"><i> </i></a></li>
+                                    <li><a href="#"><i> </i></a></li>
+                                    <li><a href="#"><i> </i></a></li>
+                                    <li><a href="#"><i> </i></a></li>
+                                </ul>
+                            </div>
+                           
+                            <div class="clearfix"> </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-md-4 chain-grid simpleCart_shelfItem">
+                    <div class="grid-span-1">
+                        <a >
+                            <img class="img-responsive " src="../../Content/images/pr2.jpg" alt=" ">
+                            <div class="link">
+                                <ul>
+                                    <li><i> </i></li>
+                                    <li><i class="white1"> </i></li>
+
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid-chain-bottom ">
+                        <h6><a>WOO JACKET #3</a></h6>
+                        <div class="star-price">
+                            <div class="price-at">
+                                <ul class="star-footer">
+                                    <li><a href="#"><i> </i></a></li>
+                                    <li><a href="#"><i> </i></a></li>
+                                    <li><a href="#"><i> </i></a></li>
+                                    <li><a href="#"><i> </i></a></li>
+                                    <li><a href="#"><i> </i></a></li>
+                                </ul>
+                            </div>
+                            <div class="price-at-bottom ">
+                                
+                            </div>
+                            <div class="clearfix"> </div>
+                        </div>
+                       
+                    </div>
+
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+
+
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+</div>
+<!---->
+<div class="bottom-grid1">
+
+    <div class="fit1">
+        <h3>HAPPY SHOPPING</h3>
+        <p>
+            Lorem Ipsum sit amet consectuer adipiscing elit
+            sed diam nonummy nibh euismod
+        </p>
+    </div>
+</div>
+<!---->
+
